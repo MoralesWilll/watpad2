@@ -40,7 +40,16 @@ gem "dotenv", "~> 3.1", ">= 3.1.4"
 
 gem "devise"
 
-gem 'pundit'
+gem "pundit"
+
+# Gemfile
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'faker'
+end
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
